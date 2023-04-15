@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+/* font-family: 'Josefin Sans', sans-serif; */
+body{
+font-family: 'Josefin Sans', sans-serif;
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+img{
+    max-width: 100%;
+}
+.desktop-img{
+    display: none;
+}
+header{
+    padding: 33px;
+}
+main{
+    padding: 32px;
+    text-align: center;
+}
+p{
+    font-size: 14px;
+    color: #CE9898;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+h1{
+   
+    font-size: 40px;
+    letter-spacing: 10.8px;
+}
+input{
+    border-radius: 28px;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  padding: 12px;
+  width: 100%;
+  border: 1px solid #CE9898;
+  
+}
+.input-btn{
+    position: relative;
+}
+button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+    border: none;
+    padding: 15.5px 28px;
+    border-radius: 28px;
+    cursor: pointer;
+}
+
+
+/* email validation */
+.right{
+    border: 1px solid green;
+}
+.error{
+    border: 2px solid #F96464;
+}
+
+/* desktop version */
+
+@media (min-width: 1300px){
+    body{
+        background: url(/assets/bg-pattern-desktop.svg);
+        display: grid;
+        width: 1200px;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 100px;
+        
+    }
+
+    .mobile-img{
+        display: none;
+        
+        
+    }
+    .desktop-img{
+        display: block;
+        max-width: 100%;
+        grid-row: span 2;
+        padding-top: 150px;
+    }
+   button:hover{
+    background: rgba(255, 255, 255, 0.5);
+   }
+
+    
+
+    
+    
+}
